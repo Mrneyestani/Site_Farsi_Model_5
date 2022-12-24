@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/favicon.png" />
+    <title>Register page</title>
+    <style>
+        h1{
+            margin-top: 50px;
+        }
+        legend{
+            color: red;
+        }
+        .personal div:not(last-child){
+            margin-bottom: 15px;
+        }
+        .personal div:last-child{
+            margin-bottom: 0px;
+        }
+
+        .personal div:not(:nth-last-child(-n+2)) input{
+            width:35%; 
+            padding: 10px;
+        }
+        .personal div:last-child input{
+            width:35%; 
+            padding: 10px;
+        }
+       
+   
+    </style>
+</head>
+<body>
+    <table style="width: 100%;">
+        <tr>
+            <td>
+                <h1>Personal Information</h1>
+                <form>
+                    <fieldset class="personal"> 
+                    <legend>Personal Details</legend>
+                        <div>
+                        <label for="">Name:</label><br />
+                        <input
+                            type="text"
+                            placeholder="Enter name here"/>
+                        </div>
+
+                        <div>
+                        <label for="">Address:</label><br />
+                        <input
+                            type="text"
+                            placeholder="Enter address here"/>
+                        </div>
+                        <div>
+                        <label for="">Email:</label><br />
+                        <input
+                            type="email"
+                            placeholder="Enter email here"/>
+                        </div>
+                        <div>
+                        <label for="">Phone Number:</label><br />
+                        <input
+                            type="number"
+                            placeholder="Enter 10 digit number"/>
+                        </div>
+                        
+                        <div>
+                            <label for="">Gender</label><br /><br />
+                            <input type="radio" name="recommend1" id="" checked/>Male<br />
+                            <input type="radio" name="recommend1" id="" />Female<br />
+                        </div>
+                        <div>
+                            <label for="">Date of birth:</label><br />
+                            <input
+                            type="date"
+                            placeholder="Enter 10 digit number"/>
+                        </div>
+                    </fieldset>
+      
+                    <fieldset style="border-bottom: 3px solid rgb(184, 174, 174);">
+                        <div style="margin-bottom: 20px">
+                            <label for="">Language and Frameworks known:</label><br><br>
+                            <input type="checkbox" name="" id="javascript" /><label
+                              for="javascript"
+                              >JavaScript</label
+                            ><br>
+                            <input type="checkbox" name="" id="react" /><label for="react"
+                              >React</label
+                            ><br>
+                            <input type="checkbox" name="" id="csharp" /><label for="csharp"
+                              >C#</label><br>
+                              <input type="checkbox" name="" id="cplusplus"checked /><label
+                                for="cplusplus"
+                                >C++</label><br>
+                                <input type="checkbox" name="" id="pythona" checked/><label for="python"
+                                  >Python</label
+                                ><br>
+                                <input type="checkbox" name="" id="django" checked/><label for="django"
+                                  >Django</label
+                                >
+                        </div>
+                    </fieldset>
+  
+                    <fieldset style="border-top: 0;">
+                        <div>
+                            <label for="">Education Level completed:</label>
+                            <select name="" id="select_id">
+                              <option value="1">University</option>
+                              <option value="2">Secondary</option>
+                              <option value="3">Primary</option>
+                            </select>
+                          </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Message Section</legend>
+                        <div><br>
+                            <label for="">Message</label><br /><br />
+                            <textarea name="" id="" cols="60" rows="5" placeholder="Enter Text Here"></textarea
+                            ><br />
+                            <p>Upload Files:</p><br>
+                            <input type="file"  name="files" id="files" multiple/>
+                            <input
+                              type="submit"
+                              value="Sent Message"
+                              style="
+                               display: flex;
+                                background: black;
+                                width: 190px;
+                                height: 45px;
+                                color: white;
+                                font-size: 15px;
+                               margin: 0px auto;
+                               cursor: pointer;
+                              "
+                            />
+                          </div>
+                    </fieldset>
+                </form>
+            </td>
+         </tr>
+        
+
+    </table>
+    
+</body>
+</html>

@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="fa-IR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="images/favicon.png" />
+    <title>سایت شخصی من</title>
+    <style>
+     *{
+          margin: 0;
+          padding: 0;
+        }
+
+        /* Style for Top&Sub menu */
+        thead th{
+        width: 100%; 
+        display:flex; 
+        background-color: #e2c0f3; 
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        }
+
+        .clear-fix{
+          clear: both;
+        }
+        
+        #nav a{
+          text-decoration: none;
+        }
+
+        #nav ul{
+          list-style: none;
+        }
+        
+        #nav li{
+          position: relative;
+        }
+        #nav > ul > li{
+          float: left;			
+        }
+        
+        #nav > ul > li > a{
+          display: inline-block;
+          color: white;
+          padding: 10px 15px;
+          line-height: 15px;
+          text-align: right;
+        }
+        #nav > ul > li:hover > a{
+          background-color: darkred;
+          color: white;
+        }
+
+        #nav > ul > li > a > img{
+          width: 40px; 
+          height: 40px;
+
+        }
+
+        #nav .sub-menu{
+          display: none;
+          position: absolute;			
+        }
+        
+        #nav .sub-menu > li > a{
+          display: block;
+          width: 120px;
+          background-color: darkred;
+          color: white;
+          padding: 20px 20px;
+        }
+        
+        #nav .sub-menu > li:hover > a{
+          background-color: orange;
+        }
+        
+        #nav li:hover > .sub-menu{
+          display: block;
+        }
+        /* End Style for Top&Sub menu */
+        
+        /* Style for About me */
+        .mb{
+          margin-bottom: 20px;
+        }
+        .percentage{
+          margin-bottom: 20px;
+          width: 85%;
+          color: #0099ff;
+        }
+        #contact{
+          font-size: 1.8rem;
+        }
+        .blueline{
+          content: ''; 
+          margin: 20px 0px; 
+          width: 135px; 
+          min-height: 6px;
+          background-color: #0078ff; 
+          border-radius: 50px;
+        }
+
+        p{
+          text-align: justify;
+          margin: 20px 0px;
+        }
+        .btn{
+          background-color: white;
+                width: 100px;
+                height: 40px;
+                color: black;
+                cursor: pointer;
+        }
+        .btn a{
+          color: black;
+        }
+     
+        /* End Style for About me */
+    </style>
+  </head>
+  <body style="direction: rtl">
+    <table style="width: 100%;">
+      <!-- Top menu -->
+      <thead>
+        <tr>
+        <th colspan="5">
+          <div id="nav">
+              <ul>
+                <li>
+                  <a href="#"><img src="images/icon-menu.png" alt="icon of menu" /></a>
+                    <ul class="sub-menu">
+                      <li><a href="#about">درباره من</a></li>
+                      <li><a href="#blog">مقالات</a></li>
+                      <li><a href="#contact">تماس با من</a></li>
+                    </ul>
+                </li>
+              </ul>
+            </div>
+         </th>
+        </tr>
+      </thead>
+      <!--  End Top menu -->
+
+      <tbody style="width: 100%;">
+        <!-- Banner -->
+        <tr>
+                <td colspan="5">
+                  <div>
+                    <img src="images/mac.jpg" style="width: 100%; height: 800px;" alt="photo of Mac"/>
+                  </div>
+                </td>
+            </tr>
+       <!-- End Banner -->
+       <tr id="blog" colspan="5" style="width: 100%;">
+        <!-- Blog -->
+              <td colspan="2" style="display:flexbox ; width: 20%; padding: 10px 20px 0px 20px;">
+                <div style="text-align: right;">
+                  <h2 style="text-align:center; padding-bottom: 30px;">مقالات</h2>
+                  <p>لورم ایپسوم :</p>
+                  <img src="images/pic.jpg" alt="Photo" style="width: 100%;"/>
+                    <p>
+                    اگر شما علاقه مند به حرفه ای شدن در صنعت طراحی وب هستید
+                    ، از جای مناسب شروع کرده اید
+                    </p><br>
+                  <p>لورم ایپسوم :</p>
+                  <img src="images/pic.jpg" alt="Photo" style="width: 100%;"/>
+                  <p>
+                    اگر شما علاقه مند به حرفه ای شدن در صنعت طراحی وب هستید
+                    ، از جای مناسب شروع کرده اید
+                    </p>
+                
+                </div>
+        <!-- End Blog -->
+        <!-- About Me -->
+              </td>
+              <td id="about" colspan="3" style="display:inline-block ; width: 80%; padding: 50px 30px 10px 30px;">
+                <h1>درباره من</h1>
+                <div class="blueline"></div>
+                 <p style="width: 65%;">
+                  این و چندین وب سایت ، کتاب و دوره آنلاین را 
+                  برای یادگیری طراحی وب معرفی می کند.
+                طراحی وب می تواند بسیار پیچیده و دلهره آور باشد
+                ، اما با توسعه تکنولوژی و نفوذ
+                اینترنت ، صنعت طراحی وب در ابعاد 
+                وسیعی رشد کرده است. تعجب آور نیست
+                که گرایش زیادی در نسل امروزی برای
+                تبدیل شدن به یک طراح وب حرفه ایی وجود دارد.
+                  این و چندین وب سایت ، کتاب و دوره آنلاین را 
+                  برای یادگیری طراحی وب معرفی می کند.
+                طراحی وب می تواند بسیار پیچیده و دلهره آور باشد
+                ، اما با توسعه تکنولوژی و نفوذ
+                اینترنت ، صنعت طراحی وب در ابعاد 
+                وسیعی رشد کرده است. تعجب آور نیست
+                که گرایش زیادی در نسل امروزی برای
+                تبدیل شدن به یک طراح وب حرفه ایی وجود دارد.
+                که گرایش زیادی در نسل امروزی برای
+                تبدیل شدن به یک طراح وب حرفه ایی وجود دارد.
+                </p><br>
+                <h4 class="mb">HTML 75%</h4>
+                <progress max="100" value="75" class="percentage"></progress>
+            
+                <h4 class="mb">CSS 95%</h4>
+                <progress max="100" value="95" class="percentage"></progress>
+                
+                <h4 class="mb">PYTHON 70%</h4>
+                <progress max="100" value="70" class="percentage"></progress>
+              
+                <h4 class="mb">JAVASCRIPT 60%</h4>
+                <progress max="100" value="60" class="percentage"></progress>
+              
+                <h4 class="mb">REACTT 50%</h4>
+                <progress max="100" value="50" class="percentage"></progress>
+          <!-- End About Me -->  
+          <!-- Contact Me -->
+          <div>
+                  <h2 id="contact">تماس با من</h2>
+                  <div class="blueline">
+                  </div>
+                  
+                  <p style="margin-bottom:10px; ">اطلاعات و رزومه خود را برای من ارسال کنید.</p>
+                  <button class="btn"><a href="registerpage.html">ارسال اطلاعات</a></button>
+                </td>
+              </tr>
+            </tbody>
+          <!-- End Contact Me -->
+          <!-- Footer -->
+      <tfoot>
+
+        <tr>
+          <td
+            colspan="4"
+            style="background: #f1f1f1; text-align: center; height: 80px"
+          >
+            Powered by MRN 
+          </td>
+        </tr>
+      </tfoot>
+      <!-- End Footer -->
+    </table>
+  </body>
+</html>
